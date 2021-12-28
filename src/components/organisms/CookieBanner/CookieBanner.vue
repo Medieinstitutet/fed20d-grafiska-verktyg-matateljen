@@ -19,11 +19,12 @@
 </template>
 
 <style lang="scss">
-@import '_cookie_banner.scss';
+@import 'cookie_banner';
 </style>
 
 <script>
-import Button from '@/components/Button/Button';
+// TODO: Interactivity
+import Button from '@/components/atoms/Button/Button';
 
 export default {
   components: { Button },

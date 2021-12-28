@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import CookieBanner from '@/components/CookieBanner/CookieBanner.vue';
+import CookieBanner from '@/components/organisms/CookieBanner/CookieBanner.vue';
 
 export default {
   components: { CookieBanner },
