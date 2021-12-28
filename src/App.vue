@@ -1,5 +1,5 @@
 <template>
-  <header>logga + meny</header>
+  <Header />
   <main>
     <router-view />
   </main>
@@ -15,8 +15,9 @@
 <script>
 import CookieBanner from '@/components/organisms/CookieBanner/CookieBanner.vue';
 import Footer from '@/components/organisms/Footer/Footer';
+import Header from '@/components/organisms/Header/Header';
 
 export default {
-  components: { Footer, CookieBanner },
+  components: { Header, Footer, CookieBanner },
 };
 </script>

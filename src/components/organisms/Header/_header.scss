@@ -1,0 +1,39 @@
+header {
+  position: fixed;
+  width: 100%;
+  color: $white;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: {
+    left: 35px;
+    right: 35px;
+    top: 25px;
+    bottom: 10px;
+  }
+
+  .left {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 6px;
+    span {
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-size: rem(22px);
+      line-height: 1;
+    }
+  }
+
+  button {
+    min-width: 35px;
+    min-height: 35px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+}
