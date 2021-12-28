@@ -1,0 +1,30 @@
+button {
+  // TODO: Hover effect
+  &.btn {
+    &-primary, &-secondary, &-contrast {
+      font-family: $font-secondary;
+      cursor: pointer;
+      border-radius: 30px;
+      border: 0;
+      box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.5);
+      padding: {
+        top: 19px;
+        bottom: 17px;
+        left: 50px;
+        right: 50px;
+      }
+      margin: {
+        bottom: 16px;
+        right: 16px;
+        top: 16px;
+      }
+    }
+    &-primary {
+      background: $rusty-yellow;
+      color: $white;
+    }
+    &-contrast {
+      background: $pale-ocean;
+    }
+  }
+}
