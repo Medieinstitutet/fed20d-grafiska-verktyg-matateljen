@@ -23,6 +23,7 @@ button {
         hyphens: none;
       }
       @media screen and (min-width: $bp-desktop) {
+        font-weight: 500;
         &:last-of-type {
           margin-right: 0;
         }

@@ -1,5 +1,7 @@
 .view-home {
   .food-menu {
+    position: relative;
+    z-index: 1;
     .wave {
       // TODO: When zooming, a slight border appears
       //&::after {

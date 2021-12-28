@@ -1,0 +1,152 @@
+section.hero {
+  height: 77vh;
+  width: 100%;
+  position: relative;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .gradient {
+    width: 100%;
+    height: 120%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 10%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 85%;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+
+  blockquote {
+    width: 100%;
+    max-width: 350px;
+    margin: {
+      bottom: 60px;
+      left: auto;
+      right: auto;
+      top: 0;
+    }
+    position: relative;
+
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    overflow: hidden;
+
+    padding: {
+      left: 33px;
+      bottom: 40px;
+      right: 37px;
+      top: 54px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-top: 70px;
+      max-width: 500px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 100px;
+      max-width: 830px;
+    }
+
+    &::before {
+      // TODO: Better positioning, also wrong font…
+      content: '“';
+      position: absolute;
+      font-size: rem(156px);
+      line-height: 1;
+      font-family: linotype-didot, serif;
+      font-weight: 400;
+      font-style: normal;
+      color: $grey;
+      left: 2%;
+      top: 20%;
+      z-index: -1;
+      @media screen and (min-width: $bp-tablet) {
+        font-size: rem(271px);
+        left: 0;
+        top: 13%;
+      }
+      @media screen and (min-width: $bp-desktop) {
+        font-size: rem(400px);
+        top: 15%;
+      }
+    }
+
+    .blur-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      backdrop-filter: blur(20px);
+      z-index: -2;
+    }
+
+    h1, cite {
+      position: relative;
+      z-index: 1;
+      max-width: rem(300px);
+    }
+
+    h1 {
+      font-weight: normal;
+      color: $white;
+      font-size: rem(25px);
+      margin-bottom: 6px;
+      position: relative;
+
+      @media screen and (min-width: $bp-tablet) {
+        font-size: rem(40px);
+        line-height: rem(47px);
+        font-weight: 300;
+        &, & + cite {
+          max-width: rem(450px);
+        }
+        &::before {
+          font-size: rem(271px);
+        }
+      }
+      @media screen and (min-width: $bp-desktop) {
+        font-size: rem(60px);
+        line-height: rem(70px);
+        margin-bottom: 9px;
+        &, & + cite {
+          max-width: rem(650px);
+        }
+        &::before {
+          font-size: rem(400px);
+        }
+      }
+
+    }
+
+    cite {
+      color: $white;
+      font-style: normal;
+      text-align: right;
+      display: block;
+      width: 100%;
+      font-size: rem(15px);
+      font-weight: 400;
+
+      @media screen and (min-width: $bp-desktop) {
+        font-size: rem(24px);
+      }
+    }
+  }
+}
