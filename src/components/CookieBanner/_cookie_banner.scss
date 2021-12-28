@@ -1,0 +1,45 @@
+.cookie-banner {
+  // TODO: Background opacity
+  background: $rusty-yellow;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: $white;
+
+  padding: 22px 35px;
+
+  .settings {
+    text-align: center;
+  }
+
+  @media screen and (max-width: $bp-desktop) {
+    button {
+      box-shadow: unset;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 150px;
+    row-gap: 10px;
+
+    .buttons {
+      display: flex;
+      align-items: center;
+    }
+
+    .settings {
+      text-align: left;
+    }
+
+    button {
+      width: calc(50% - 16px);
+    }
+  }
+}
