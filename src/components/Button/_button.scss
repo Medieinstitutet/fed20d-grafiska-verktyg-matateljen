@@ -3,8 +3,9 @@ button {
   &.btn {
     &-primary, &-secondary, &-contrast {
       font-family: $font-secondary;
+      font-size: rem(15px);
       cursor: pointer;
-      border-radius: 30px;
+      border-radius: 28px;
       border: 0;
       box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.5);
       padding: {
@@ -17,6 +18,14 @@ button {
         bottom: 16px;
         right: 16px;
         top: 16px;
+      }
+      @media screen and (min-width: $bp-tablet) {
+        hyphens: none;
+      }
+      @media screen and (min-width: $bp-desktop) {
+        &:last-of-type {
+          margin-right: 0;
+        }
       }
     }
     &-primary {
