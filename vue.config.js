@@ -9,7 +9,7 @@ module.exports = defineConfig({
     loaderOptions: {
       sass: {
         // Whatever you do, do not remove the semicolon in the import statement below, or 💥
-        additionalData: '@import "@/styles/config/_variables.scss";',
+        additionalData: '@import "@/styles/config.scss";',
       },
     },
   },
