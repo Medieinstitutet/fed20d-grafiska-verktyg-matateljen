@@ -3,7 +3,7 @@
   <main>
     <router-view />
   </main>
-  <footer>footer-elementet</footer>
+  <Footer />
   <CookieBanner />
   <!--  <nav>-->
   <!--    <router-link to="/">Home</router-link> |-->
@@ -14,8 +14,9 @@
 
 <script>
 import CookieBanner from '@/components/organisms/CookieBanner/CookieBanner.vue';
+import Footer from '@/components/organisms/Footer/Footer';
 
 export default {
-  components: { CookieBanner },
+  components: { Footer, CookieBanner },
 };
 </script>

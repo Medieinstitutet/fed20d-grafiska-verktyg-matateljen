@@ -24,7 +24,7 @@
 
 <script>
 // TODO: Interactivity
-import Button from '@/components/atoms/Button/Button';
+import Button from '@/components/atoms/Button/Button.vue';
 
 export default {
   components: { Button },

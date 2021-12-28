@@ -1,0 +1,49 @@
+footer {
+  color: $white;
+  background: $darkest-grey;
+  font-size: rem(15px);
+  line-height: rem(25px);
+  padding: {
+    top: 53px;
+    left: 53px;
+    right: 53px;
+    bottom: 80px;
+  }
+
+  section {
+    margin-bottom: 25px;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .some-icons {
+    margin-top: 40px;
+    text-align: center;
+    div {
+      display: inline-flex;
+      column-gap: 60px;
+    }
+  }
+  
+  @media screen and (min-width: $bp-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+    .some-icons, section:first-of-type {
+      grid-column: 1/span 2;
+    }
+    .contact {
+      text-align: right;
+    }
+  }
+}
