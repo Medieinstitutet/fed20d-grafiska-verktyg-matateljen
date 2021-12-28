@@ -1,0 +1,102 @@
+.view-home {
+  .food-menu {
+    .wave {
+      // TODO: When zooming, a slight border appears
+      //&::after {
+      //  content: '';
+      //  display: block;
+      //  background: $pale-ocean;
+      //  height: 2px;
+      //  position: absolute;
+      //  bottom: 4px;
+      //  z-index: 9;
+      //  width: 100%;
+      //}
+    }
+    &-content {
+      background: $pale-ocean;
+      color: $darkest-grey;
+
+      padding: {
+        top: 10px;
+        left: 75px;
+        right: 70px;
+        bottom: 43px;
+      }
+
+      .price {
+        font-weight: 500;
+        display: block; // TODO: Double check font weight, doesn't look ok in firefox
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          margin-bottom: 32px;
+        }
+        p {
+          font-size: rem(20px);
+          line-height: rem(32px);
+        }
+      }
+
+      @media screen and (min-width: $bp-tablet) {
+        padding: {
+          left: 102px;
+          right: 44px;
+        }
+
+        h2 {
+          margin-left: 65px;
+        }
+
+        ul {
+          p {
+            display: flex;
+            column-gap: 146px;
+          }
+          span:not(.price) {
+            flex-grow: 1;
+            width: 100%;
+          }
+          .price {
+            flex: 0 0 rem(100px);
+            text-align: right;
+            font-weight: bold;
+          }
+        }
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 44px;
+
+        $shiftTop: -90px;
+
+        h2 {
+          width: calc(100% - 27.6%);
+          margin-left: 27.6%;
+          position: relative;
+          top: $shiftTop;
+        }
+
+        .inner {
+          margin-left: 12%;
+          margin-right: 12%;
+          position: relative;
+          top: $shiftTop;
+
+          display: flex;
+          column-gap: 290px;
+          flex-wrap: wrap;
+          section {
+            width: calc(50% - (290px / 2));
+          }
+        }
+      }
+    }
+  }
+}
