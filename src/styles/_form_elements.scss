@@ -18,8 +18,9 @@ label {
 
 input[type="text"], input[type="email"], input[type="tel"] {
   border-radius: 35px;
-  border-color: $form-border-grey;
+  border: 2px solid $form-border-grey;
   color: $black;
+  min-width: rem(250px);
   padding: {
     top: 14px;
     bottom: 13px;

@@ -1,0 +1,14 @@
+@media not all and (min-resolution:.001dpcm) {
+  @media {
+    header {
+      background: transparent;
+    }
+    section.hero .gradient {
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .view-home .food-menu-content {
+      position: relative;
+      top: -2px;
+    }
+  }
+}

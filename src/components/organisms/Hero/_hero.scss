@@ -1,11 +1,12 @@
 section.hero {
   height: 77vh;
   width: 100%;
+  min-height: 600px;
   position: relative;
   img {
     object-fit: cover;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
   }
   .gradient {
     width: 100%;
@@ -59,7 +60,7 @@ section.hero {
       max-width: 500px;
     }
     @media screen and (min-width: $bp-desktop) {
-      padding-top: 100px;
+      padding-top: 70px;
       max-width: 830px;
     }
 
