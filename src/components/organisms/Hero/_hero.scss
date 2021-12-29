@@ -164,8 +164,11 @@ section.hero {
     height: 100vh;
     z-index: 999;
 
-    max-width: 846px;
-    max-height: 648px;
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 846px;
+      max-height: 648px;
+    }
+
 
     .close-booking-form {
       width: 35px;
@@ -176,6 +179,10 @@ section.hero {
       top: 37px;
       right: 33px;
       position: absolute;
+
+      @media screen and (max-width: $bp-tablet) {
+        top: 80px;
+      }
       img {
         width: 100%;
         height: auto;

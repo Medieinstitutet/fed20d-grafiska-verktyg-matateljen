@@ -28,6 +28,9 @@ button {
         }
       }
     }
+    &-secondary {
+      color: $black;
+    }
     &-primary {
       background: $rusty-yellow;
       color: $white;

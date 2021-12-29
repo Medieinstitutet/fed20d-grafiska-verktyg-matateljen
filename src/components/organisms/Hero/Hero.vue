@@ -71,11 +71,17 @@ export default {
   components: { Button },
   methods: {
     openBookingForm() {
-      // TODO: Disable scroll on body when this is open
       this.bookingFormOpen = !this.bookingFormOpen;
+
+      if (this.bookingFormOpen) {
+        this.$store.commit('disableBodyScroll');
+      } else {
+        this.$store.commit('enableBodyScroll');
+      }
     },
     closeBookingForm() {
       this.bookingFormOpen = false;
+      this.$store.commit('enableBodyScroll');
     },
   },
 };

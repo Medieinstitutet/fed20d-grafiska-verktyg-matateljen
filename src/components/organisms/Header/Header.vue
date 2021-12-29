@@ -44,6 +44,12 @@ export default {
     toggleMenu() {
       // TODO: Also close menu when clicking outside menu block
       this.menuOpen = !this.menuOpen;
+
+      if (this.menuOpen) {
+        this.$store.commit('disableBodyScroll');
+      } else {
+        this.$store.commit('enableBodyScroll');
+      }
     },
   },
 };
