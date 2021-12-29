@@ -2,6 +2,9 @@
 
 Exempeluppkodning av en design gjord av Emma & Rebecka.
 
+Sidan finns live här: [https://fed20d-matateljen.jennipulli.se/](https://fed20d-matateljen.jennipulli.se/)
+
+## Video-genomgång av processen
 YouTube-playlist med genomgång finns [här](https://youtube.com/playlist?list=PLWZQ_pCt8HKu6okKqF0eLwCDmZDRUnaCA).
 
 1. Del 1 - [Sätter upp Vue, funderar på projektets designstruktur](https://youtu.be/HEjCOQtsCV4)
