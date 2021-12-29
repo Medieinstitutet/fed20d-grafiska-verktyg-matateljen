@@ -33,7 +33,12 @@ button {
     }
     &-primary {
       background: $rusty-yellow;
-      color: $white;
+      color: $black; // Changed from white --> black because of AA contrast
+      @at-root html[data-whatinput="keyboard"] {
+        button.btn-primary:focus {
+          outline: 3px solid $white;
+        }
+      }
     }
     &-contrast {
       background: $pale-ocean;

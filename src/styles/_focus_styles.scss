@@ -1,0 +1,7 @@
+html[data-whatinput="keyboard"] {
+  button, a {
+    &:focus {
+      outline: 3px solid $rusty-yellow;
+    }
+  }
+}

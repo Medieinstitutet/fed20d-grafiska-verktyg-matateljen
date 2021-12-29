@@ -33,7 +33,6 @@
                 </p>
               </li>
             </ul>
-            <h4></h4>
           </section>
           <section>
             <h3>Dessert</h3>
@@ -53,7 +52,6 @@
                 </p>
               </li>
             </ul>
-            <h4></h4>
           </section>
         </div>
       </div>

@@ -5,17 +5,20 @@
       <span>Matateljen</span>
     </div>
     <div class="right">
-      <button aria-haspopup="true" @click="toggleMenu" @keydown.enter="toggleMenu">
+      <button
+        aria-haspopup="true"
+        @click="toggleMenu"
+        @keydown.enter="toggleMenu"
+        :aria-expanded="menuOpen"
+        aria-controls="primary-menu"
+        aria-label="Öppna och stäng menyn"
+      >
         <MenuIcon :open="menuOpen" />
       </button>
-      <!-- todo:
-      - Add ref to opened menu: aria-controls="IDREF"
-      - Add this attr. when menu is open to the button: aria-expanded="true"
-      -->
     </div>
     <transition name="fade">
       <!-- todo: keep menu for SEO, hide with CSS instead of if -->
-      <nav v-if="menuOpen" class="primary-menu" :class="{ open: menuOpen }">
+      <nav v-if="menuOpen" class="primary-menu" :class="{ open: menuOpen }" id="primary-menu">
         <ul>
           <li>Menu</li>
           <li>Catering</li>
