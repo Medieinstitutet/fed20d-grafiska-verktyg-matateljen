@@ -1,11 +1,11 @@
 <template>
   <section class="hero">
     <img
-      src="~@/assets/decor/matateljen_hero.jpg"
+      src="~@/assets/decor/matateljen_hero.webp"
       srcset="
         ~@/assets/decor/matateljen_hero_mobile.jpg  320w,
-        ~@/assets/decor/matateljen_hero.jpg         800w,
-        ~@/assets/decor/matateljen_hero.jpg        1200w
+        ~@/assets/decor/matateljen_hero.webp        800w,
+        ~@/assets/decor/matateljen_hero.webp       1200w
       "
       sizes="(min-width: 60rem) 80vw, (min-width: 40rem) 90vw, 100vw"
       alt="Charkbricka med två kaffemuggar"

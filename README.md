@@ -15,6 +15,7 @@ YouTube-playlist med genomgång finns [här](https://youtube.com/playlist?list=P
 9. Del 9 - [Testa sajten](https://youtu.be/akBFAdYyarI)
 10. Del 10 - [Stäng av bg scroll & mobilfixar](https://youtu.be/ffO8l94SPL8)
 11. Del 11 - [Fixa tillgänglighet](https://youtu.be/rifO2IYJ83c)
+12. Del 12 - [Deployment](https://youtu.be/bzjhPBxD1g4)
 
 ## Project setup
 

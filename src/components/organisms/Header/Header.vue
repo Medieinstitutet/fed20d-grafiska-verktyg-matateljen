@@ -1,7 +1,12 @@
 <template>
   <header>
     <div class="left">
-      <img src="~@/assets/icons/matateljen-symbol.svg" alt="Illustration på vitt klassicism-hus" />
+      <img
+        src="~@/assets/icons/matateljen-symbol.svg"
+        alt="Illustration på vitt klassicism-hus"
+        width="51"
+        height="42"
+      />
       <span>Matateljen</span>
     </div>
     <div class="right">

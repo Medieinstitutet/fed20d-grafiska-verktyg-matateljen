@@ -3,7 +3,7 @@
     <Hero />
     <section class="food-menu">
       <div class="wave">
-        <img src="~@/assets/decor/wave.svg" alt="" />
+        <img src="~@/assets/decor/wave.svg" width="436" height="58" alt="" />
       </div>
       <div class="food-menu-content">
         <h2>Vår meny</h2>
