@@ -1,12 +1,9 @@
 .cookie-banner {
-  // TODO: Background opacity
-
-  // TODO: Show cookie banner
-  display: none;
-
-  background: $rusty-yellow;
+  background: transparentize($rusty-yellow, 0.2);
+  backdrop-filter: blur(10px);
 
   position: fixed;
+  z-index: 999;
   bottom: 0;
   left: 0;
   width: 100%;

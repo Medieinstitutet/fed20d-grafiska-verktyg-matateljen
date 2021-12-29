@@ -1,21 +1,17 @@
 .view-home {
-  padding-top: 40px;
   background: $black;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 40px;
+  }
+
   .food-menu {
     position: relative;
     z-index: 1;
     .wave {
-      // TODO: When zooming, a slight border appears
-      //&::after {
-      //  content: '';
-      //  display: block;
-      //  background: $pale-ocean;
-      //  height: 2px;
-      //  position: absolute;
-      //  bottom: 4px;
-      //  z-index: 9;
-      //  width: 100%;
-      //}
+      img {
+        width: 100%;
+      }
     }
     &-content {
       background: $pale-ocean;
