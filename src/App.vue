@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <main>
+  <main ref="main">
     <router-view />
   </main>
   <Footer />
@@ -19,5 +19,10 @@ import Header from '@/components/organisms/Header/Header';
 
 export default {
   components: { Header, Footer, CookieBanner },
+  mounted() {
+    this.$refs.main.addEventListener('click', () => {
+      this.$store.commit('closePrimaryMenu');
+    });
+  },
 };
 </script>

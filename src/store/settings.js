@@ -1,6 +1,7 @@
 const settings = {
   state: {
     bodyScrollDisabled: false,
+    primaryNavOpen: false,
   },
   mutations: {
     disableBodyScroll(state) {
@@ -10,6 +11,9 @@ const settings = {
     enableBodyScroll(state) {
       state.bodyScrollDisabled = false;
       document.body.classList.remove('scroll-disabled');
+    },
+    closePrimaryMenu(state) {
+      state.primaryNavOpen = false;
     },
   },
   // Read more about actions & getters:

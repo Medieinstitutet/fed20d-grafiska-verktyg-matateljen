@@ -45,7 +45,6 @@ export default {
   },
   methods: {
     toggleMenu() {
-      // TODO: Also close menu when clicking outside menu block
       this.menuOpen = !this.menuOpen;
 
       if (this.menuOpen) {
@@ -54,6 +53,17 @@ export default {
         this.$store.commit('enableBodyScroll');
       }
     },
+    closeMenu() {
+      this.menuOpen = false;
+      this.$store.commit('enableBodyScroll');
+    },
+  },
+  mounted() {
+    this.$store.subscribe(mutation => {
+      if (mutation.type === 'closePrimaryMenu') {
+        this.closeMenu();
+      }
+    });
   },
 };
 </script>
