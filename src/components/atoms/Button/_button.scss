@@ -4,7 +4,6 @@ button {
     &-primary, &-secondary, &-contrast {
       font-family: $font-secondary;
       font-size: rem(15px);
-      cursor: pointer;
       border-radius: 28px;
       border: 0;
       box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.5);

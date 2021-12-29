@@ -1,0 +1,43 @@
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: {
+    left: auto;
+    right: auto;
+    bottom: 30px;
+  }
+}
+
+label {
+  font-size: rem(18px);
+  font-weight: 400;
+  display: block;
+  padding-left: 23px;
+  margin-bottom: 8px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  border-radius: 35px;
+  border-color: $form-border-grey;
+  padding: {
+    top: 14px;
+    bottom: 13px;
+    left: 26px;
+  }
+}
+
+input[type="submit"] {
+  display: block;
+  cursor: pointer;
+  background: $rusty-yellow;
+  color: $white;
+  border-radius: 35px;
+  border: 0;
+  line-height: 1;
+  padding: {
+    top: 11px;
+    bottom: 12px;
+    left: 27px;
+    right: 27px;
+  }
+}

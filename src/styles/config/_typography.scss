@@ -53,6 +53,10 @@ p {
   line-height: rem(25px);
 }
 
+.font-moret {
+  font-family: $font-primary;
+}
+
 @media screen and (min-width: $bp-desktop) {
   h2 {
     font-size: rem(55px);

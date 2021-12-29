@@ -19,3 +19,20 @@
   right: 0;
   opacity: 1;
 }
+
+// --------------- FADE ONLY
+
+.fade-only-enter-from,
+.fade-only-leave-to {
+  opacity: 0;
+}
+
+.fade-only-enter-active,
+.fade-only-leave-active {
+  transition:
+          opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.fade-only-enter-to {
+  opacity: 1;
+}

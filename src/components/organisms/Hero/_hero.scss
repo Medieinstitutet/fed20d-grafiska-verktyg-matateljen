@@ -149,4 +149,68 @@ section.hero {
       }
     }
   }
+
+  .booking-form {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(11px);
+    color: $white;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+
+    max-width: 846px;
+    max-height: 648px;
+
+    .close-booking-form {
+      width: 35px;
+      height: 35px;
+      background: transparent;
+      border: 0;
+      padding: 0;
+      top: 37px;
+      right: 33px;
+      position: absolute;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 68px;
+      @media screen and (min-width: $bp-desktop) {
+        font-size: rem(55px);
+      }
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input[type="submit"] {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    fieldset {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+  }
 }

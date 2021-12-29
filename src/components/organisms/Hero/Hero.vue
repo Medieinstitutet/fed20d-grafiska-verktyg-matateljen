@@ -20,11 +20,40 @@
       </blockquote>
 
       <div class="buttons">
-        <!-- todo: popup -->
-        <Button button-text="Boka bord" />
+        <Button button-text="Boka bord" @click="openBookingForm" @keydown.enter="openBookingForm" />
         <Button button-text="Catering" button-style="secondary" />
       </div>
     </div>
+
+    <transition name="fade-only">
+      <!-- todo: could scale up -->
+      <div class="booking-form" v-if="bookingFormOpen">
+        <button class="close-booking-form" @click="closeBookingForm" @keydown.enter="closeBookingForm">
+          <img src="~@/assets/icons/icon-close.svg" alt="Stäng" />
+        </button>
+        <div class="inner">
+          <h3 class="font-moret">Boka bord</h3>
+          <form>
+            <fieldset>
+              <label for="name">Ditt namn</label>
+              <input type="text" id="name" placeholder="Hanna Sjö" />
+            </fieldset>
+
+            <fieldset>
+              <label for="email">Mail</label>
+              <input type="email" id="email" placeholder="hanna@example.com" />
+            </fieldset>
+
+            <fieldset>
+              <label for="phone">Telefonnummer</label>
+              <input type="tel" id="phone" placeholder="0707 22 95 41" />
+            </fieldset>
+
+            <input type="submit" value="Boka" />
+          </form>
+        </div>
+      </div>
+    </transition>
   </section>
 </template>
 
@@ -34,7 +63,21 @@ import Button from '@/components/atoms/Button/Button';
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Hero',
+  data() {
+    return {
+      bookingFormOpen: false,
+    };
+  },
   components: { Button },
+  methods: {
+    openBookingForm() {
+      // TODO: Disable scroll on body when this is open
+      this.bookingFormOpen = !this.bookingFormOpen;
+    },
+    closeBookingForm() {
+      this.bookingFormOpen = false;
+    },
+  },
 };
 </script>
 
