@@ -10,6 +10,7 @@ YouTube-playlist med genomgång finns [här](https://youtube.com/playlist?list=P
 4. Del 4 - Matmenyn (med vågformen)
 5. Del 5 - Hero-delen av sidan
 6. Del 6 - Menyns layout (ej interaktion)
+7. Del 7 - Menyns interaktivitet
 
 ## Project setup
 

@@ -1,0 +1,21 @@
+.fade-enter-from {
+  right: -100%;
+  opacity: 0;
+}
+
+.fade-leave-to {
+  right: -100% !important;
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition:
+          right 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+          opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.fade-enter-to {
+  right: 0;
+  opacity: 1;
+}

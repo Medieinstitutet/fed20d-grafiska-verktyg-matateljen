@@ -4,7 +4,7 @@ header {
   color: $white;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 997;
 
   display: flex;
   justify-content: space-between;
@@ -35,5 +35,39 @@ header {
     border: 0;
     background: transparent;
     cursor: pointer;
+    position: relative;
+    z-index: 999;
+    svg {
+      display: block;
+    }
+  }
+
+  .primary-menu {
+    background: transparentize($black, 0.3);
+    backdrop-filter: blur(11px) brightness(22%) opacity(69%);
+    color: $white;
+    position: fixed;
+    top: 0;
+    z-index: 998;
+    width: 100vw;
+    height: 100vh;
+    max-width: 404px;
+    &.open:not(.fade-enter-active) {
+      right: 0;
+    }
+    ul {
+      padding: 0;
+      margin: 0 auto;
+      list-style: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      li {
+        font-size: rem(25px);
+        font-weight: 300;
+        margin-bottom: 71px;
+      }
+    }
   }
 }
