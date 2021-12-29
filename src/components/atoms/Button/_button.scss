@@ -1,5 +1,4 @@
 button {
-  // TODO: Hover effect
   &.btn {
     &-primary, &-secondary, &-contrast {
       font-family: $font-secondary;
@@ -10,8 +9,8 @@ button {
       padding: {
         top: 19px;
         bottom: 17px;
-        left: 50px;
-        right: 50px;
+        left: 30px;
+        right: 30px;
       }
       margin: {
         bottom: 16px;

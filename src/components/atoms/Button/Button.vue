@@ -24,7 +24,9 @@ export default {
     },
     buttonStyle: {
       type: String,
-      default: 'primary', // TODO - Not working
+      default() {
+        return 'primary';
+      },
       validator(value) {
         return ['primary', 'secondary', 'contrast', 'disabled'].includes(value);
       },
